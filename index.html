@@ -29,6 +29,7 @@
     <nav class="nav" id="primaryNav" aria-label="Primary">
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#services">Services</a></li>
@@ -170,6 +171,94 @@
       </div>
     </div>
   </section>
+
+  <!-- ============================================================ SKILLS -->
+  <section class="section section--forest on-dark" id="skills" aria-labelledby="skills-h">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">What I bring</span>
+        <h2 id="skills-h">Skills across project, business &amp; operations management</h2>
+        <p>The disciplines I draw on to keep complex programmes governed, transformations grounded, and operations running.</p>
+      </div>
+
+      <div class="skills-grid reveal">
+        <div class="skills-col">
+          <h3>Project Management</h3>
+          <ul>
+            <li>Project Delivery &amp; Coordination</li>
+            <li>Project Scheduling &amp; Planning</li>
+            <li>RAID Management</li>
+            <li>Risk &amp; Dependency Management</li>
+            <li>Delivery Governance</li>
+            <li>Agile &amp; Hybrid Delivery Frameworks (Scrum Methodology, Sprint Planning &amp; Retrospectives)</li>
+            <li>Change Control &amp; Milestone Tracking</li>
+            <li>Oracle Primavera P6 Professional</li>
+            <li>Microsoft Project Professional</li>
+            <li>Jira / Confluence Professional</li>
+          </ul>
+        </div>
+
+        <div class="skills-col">
+          <h3>Business Management</h3>
+          <ul>
+            <li>Business Transformation</li>
+            <li>Change Management</li>
+            <li>Strategic Planning (OKRs)</li>
+            <li>Stakeholder Engagement</li>
+            <li>Cross-Functional Team Leadership</li>
+            <li>Continuous Improvement</li>
+            <li>Business Intelligence &amp; Executive Reporting (Power BI)</li>
+            <li>Cost Transformation &amp; Financial Performance Management</li>
+          </ul>
+        </div>
+
+        <div class="skills-col">
+          <h3>Operations Management</h3>
+          <ul>
+            <li>Resource Management</li>
+            <li>Supply Chain &amp; Vendor Management</li>
+            <li>Procurement &amp; Cost Control</li>
+            <li>Operational Governance &amp; Performance Monitoring</li>
+            <li>Process Redesign &amp; Predictive Analytics</li>
+            <li>Business Resilience &amp; Risk Management</li>
+            <li>Service Delivery Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:36px;
+      margin-top:8px;
+    }
+    .skills-col h3{
+      font-size:1.05rem;
+      color:#fff;
+      margin-bottom:16px;
+      padding-bottom:10px;
+      border-bottom:1px solid #E6A017;
+    }
+    .skills-col ul{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    .skills-col li{
+      font-size:0.9rem;
+      color:#C4CCD4;
+      padding:7px 0;
+      line-height:1.5;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+    .skills-col li:last-child{ border-bottom:none; }
+    @media (max-width:820px){
+      .skills-grid{ grid-template-columns:1fr; gap:28px; }
+    }
+  </style>
 
   <!-- =================================================== CERTIFICATIONS -->
   <section class="section" id="certifications" aria-labelledby="cert-h">
@@ -683,6 +772,7 @@
       <nav class="footer-col" aria-label="Site">
         <h4>Explore</h4>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#certifications">Certifications</a>
         <a href="#work">Selected programmes</a>
         <a href="#services">What I do</a>
