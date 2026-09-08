@@ -29,7 +29,6 @@
     <nav class="nav" id="primaryNav" aria-label="Primary">
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#services">Services</a></li>
@@ -171,94 +170,6 @@
       </div>
     </div>
   </section>
-
-  <!-- ============================================================ SKILLS -->
-  <section class="section section--forest on-dark" id="skills" aria-labelledby="skills-h">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">What I bring</span>
-        <h2 id="skills-h">Skills across project, business &amp; operations management</h2>
-        <p>The disciplines I draw on to keep complex programmes governed, transformations grounded, and operations running.</p>
-      </div>
-
-      <div class="skills-grid reveal">
-        <div class="skills-col">
-          <h3>Project Management</h3>
-          <ul>
-            <li>Project Delivery &amp; Coordination</li>
-            <li>Project Scheduling &amp; Planning</li>
-            <li>RAID Management</li>
-            <li>Risk &amp; Dependency Management</li>
-            <li>Delivery Governance</li>
-            <li>Agile &amp; Hybrid Delivery Frameworks (Scrum Methodology, Sprint Planning &amp; Retrospectives)</li>
-            <li>Change Control &amp; Milestone Tracking</li>
-            <li>Oracle Primavera P6 Professional</li>
-            <li>Microsoft Project Professional</li>
-            <li>Jira / Confluence Professional</li>
-          </ul>
-        </div>
-
-        <div class="skills-col">
-          <h3>Business Management</h3>
-          <ul>
-            <li>Business Transformation</li>
-            <li>Change Management</li>
-            <li>Strategic Planning (OKRs)</li>
-            <li>Stakeholder Engagement</li>
-            <li>Cross-Functional Team Leadership</li>
-            <li>Continuous Improvement</li>
-            <li>Business Intelligence &amp; Executive Reporting (Power BI)</li>
-            <li>Cost Transformation &amp; Financial Performance Management</li>
-          </ul>
-        </div>
-
-        <div class="skills-col">
-          <h3>Operations Management</h3>
-          <ul>
-            <li>Resource Management</li>
-            <li>Supply Chain &amp; Vendor Management</li>
-            <li>Procurement &amp; Cost Control</li>
-            <li>Operational Governance &amp; Performance Monitoring</li>
-            <li>Process Redesign &amp; Predictive Analytics</li>
-            <li>Business Resilience &amp; Risk Management</li>
-            <li>Service Delivery Management</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <style>
-    .skills-grid{
-      display:grid;
-      grid-template-columns:repeat(3, 1fr);
-      gap:36px;
-      margin-top:8px;
-    }
-    .skills-col h3{
-      font-size:1.05rem;
-      color:#fff;
-      margin-bottom:16px;
-      padding-bottom:10px;
-      border-bottom:1px solid #E6A017;
-    }
-    .skills-col ul{
-      list-style:none;
-      padding:0;
-      margin:0;
-    }
-    .skills-col li{
-      font-size:0.9rem;
-      color:#C4CCD4;
-      padding:7px 0;
-      line-height:1.5;
-      border-bottom:1px solid rgba(255,255,255,0.08);
-    }
-    .skills-col li:last-child{ border-bottom:none; }
-    @media (max-width:820px){
-      .skills-grid{ grid-template-columns:1fr; gap:28px; }
-    }
-  </style>
 
   <!-- =================================================== CERTIFICATIONS -->
   <section class="section" id="certifications" aria-labelledby="cert-h">
@@ -405,37 +316,89 @@
       <div class="section-head reveal">
         <span class="eyebrow">What I do</span>
         <h2 id="svc-h">Four areas where I add value</h2>
-        <p>Every engagement is scoped around what the programme actually needs — whether that's full delivery ownership or a sharper governance layer.</p>
+        <p>Every engagement is scoped around what the programme actually needs. Click a tile for the core skills and detail behind it.</p>
       </div>
 
       <div class="svc-grid">
-        <article class="svc-card reveal">
+        <article class="svc-card svc-trigger reveal" tabindex="0" role="button" aria-haspopup="dialog">
           <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
           <h3>Project &amp; Programme Delivery</h3>
           <p>End-to-end scheduling, RAID management and milestone governance for complex builds and change programmes — from first plan to handover.</p>
           <span class="num-tag">01 — Delivery</span>
+          <div class="svc-popdata" hidden>
+            <p>I've coordinated and delivered projects valued at over $10 million — managing complex schedules, stakeholder expectations, supplier dependencies and cross-functional workstreams while keeping commitments to timelines and commercial targets intact. If your programme needs a safe pair of hands from kickoff to handover, this is where I add value first.</p>
+            <ul>
+              <li>Project Delivery &amp; Coordination</li>
+              <li>Project Scheduling &amp; Planning</li>
+              <li>RAID Management</li>
+              <li>Change Control &amp; Milestone Tracking</li>
+              <li>Agile &amp; Hybrid Delivery Frameworks (Scrum Methodology, Sprint Planning &amp; Retrospectives)</li>
+              <li>Oracle Primavera P6 Professional</li>
+              <li>Microsoft Project Professional</li>
+              <li>Jira / Confluence Professional</li>
+            </ul>
+          </div>
         </article>
-        <article class="svc-card reveal" data-delay="1">
+
+        <article class="svc-card svc-trigger reveal" data-delay="1" tabindex="0" role="button" aria-haspopup="dialog">
           <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.8"/><path d="M12 3.5v17M3.5 12h17" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg></span>
           <h3>Business Transformation</h3>
           <p>Process redesign, cost reduction and OKR planning frameworks that turn strategic goals into measurable operational outcomes.</p>
           <span class="num-tag">02 — Transformation</span>
+          <div class="svc-popdata" hidden>
+            <p>I directed a company-wide transformation that cut operating costs from 48% to 30% of revenue through predictive analytics, process redesign and stronger governance — and designed OKR-based planning frameworks that drove a 35% increase in customer acquisition. I look for the structural fix, not just the quick win.</p>
+            <ul>
+              <li>Business Transformation</li>
+              <li>Strategic Planning (OKRs)</li>
+              <li>Cost Transformation &amp; Financial Performance Management</li>
+              <li>Continuous Improvement</li>
+              <li>Cross-Functional Team Leadership</li>
+              <li>Business Intelligence &amp; Executive Reporting (Power BI)</li>
+            </ul>
+          </div>
         </article>
-        <article class="svc-card reveal" data-delay="2">
+
+        <article class="svc-card svc-trigger reveal" data-delay="2" tabindex="0" role="button" aria-haspopup="dialog">
           <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.8"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5" stroke="currentColor" stroke-width="1.8"/></svg></span>
           <h3>Governance &amp; Reporting</h3>
           <p>RAID logs, risk registers and Power BI executive dashboards that give leadership real visibility into delivery, budget and risk.</p>
           <span class="num-tag">03 — Governance</span>
+          <div class="svc-popdata" hidden>
+            <p>I build the reporting layer leadership actually trusts — RAID logs, risk registers and executive dashboards that surface problems early instead of at the post-mortem. It's unglamorous work, and it's the first thing I put in place on any new programme.</p>
+            <ul>
+              <li>Delivery Governance</li>
+              <li>Risk &amp; Dependency Management</li>
+              <li>Operational Governance &amp; Performance Monitoring</li>
+              <li>Stakeholder Engagement</li>
+            </ul>
+          </div>
         </article>
-        <article class="svc-card reveal" data-delay="3">
+
+        <article class="svc-card svc-trigger reveal" data-delay="3" tabindex="0" role="button" aria-haspopup="dialog">
           <span class="svc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 16l5-6 4 4 3-4 4 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="7" r="2" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/></svg></span>
           <h3>Change &amp; Risk Management</h3>
           <p>Leading teams through downturns, resilience planning and organisational change that protects delivery and client retention.</p>
           <span class="num-tag">04 — Change</span>
+          <div class="svc-popdata" hidden>
+            <p>I led business resilience through the global oil market downturn and COVID-19, holding 100% client retention while managing supply chains, vendors and operational risk under real pressure. I'm someone organisations lean on when conditions get harder, not just when things are going well.</p>
+            <ul>
+              <li>Change Management</li>
+              <li>Business Resilience &amp; Risk Management</li>
+              <li>Resource Management</li>
+              <li>Supply Chain &amp; Vendor Management</li>
+              <li>Procurement &amp; Cost Control</li>
+              <li>Process Redesign &amp; Predictive Analytics</li>
+              <li>Service Delivery Management</li>
+            </ul>
+          </div>
         </article>
       </div>
     </div>
   </section>
+
+  <style>
+    .svc-trigger{ cursor:pointer; }
+  </style>
 
   <!-- ============================================================ WORK -->
   <section class="section section--paper2" id="work" aria-labelledby="work-h">
@@ -772,7 +735,6 @@
       <nav class="footer-col" aria-label="Site">
         <h4>Explore</h4>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#certifications">Certifications</a>
         <a href="#work">Selected programmes</a>
         <a href="#services">What I do</a>
@@ -829,6 +791,90 @@
       }).finally(function(){
         if(submitBtn) submitBtn.disabled = false;
       });
+    });
+  })();
+</script>
+
+<!-- ================================================== SERVICE MODAL -->
+<div class="wm-overlay" id="svcModal" aria-hidden="true">
+  <div class="wm-panel" role="dialog" aria-modal="true" aria-labelledby="smTitle">
+    <button type="button" class="wm-close" id="smClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <span class="wm-tag" id="smTag"></span>
+    <h3 id="smTitle"></h3>
+    <p class="wm-desc" id="smStatement"></p>
+    <ul class="sm-skills" id="smSkills"></ul>
+  </div>
+</div>
+
+<style>
+  .sm-skills{ list-style:none; margin:20px 0 0; padding:0; }
+  .sm-skills li{
+    font-size:0.9rem; color:#14231C; padding:9px 0;
+    border-top:1px solid #E3DFD3; line-height:1.4;
+  }
+  .sm-skills li:first-child{ border-top:none; }
+</style>
+
+<script>
+  (function initServiceModal(){
+    var modal = document.getElementById('svcModal');
+    if(!modal) return;
+
+    var tagEl   = document.getElementById('smTag');
+    var titleEl = document.getElementById('smTitle');
+    var stEl    = document.getElementById('smStatement');
+    var skillsEl= document.getElementById('smSkills');
+    var closeBtn= document.getElementById('smClose');
+    var triggers = document.querySelectorAll('.svc-trigger');
+    if(!triggers.length) return;
+
+    function openModal(card){
+      var tag   = card.querySelector('.num-tag');
+      var title = card.querySelector('h3');
+      var data  = card.querySelector('.svc-popdata');
+      if(!data) return;
+
+      tagEl.textContent   = tag ? tag.textContent : '';
+      titleEl.textContent = title ? title.textContent : '';
+      stEl.textContent    = (data.querySelector('p') || {}).textContent || '';
+
+      skillsEl.innerHTML = '';
+      data.querySelectorAll('li').forEach(function(li){
+        var item = document.createElement('li');
+        item.textContent = li.textContent;
+        skillsEl.appendChild(item);
+      });
+
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('wm-locked');
+      closeBtn.focus();
+    }
+
+    function closeModal(){
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('wm-locked');
+    }
+
+    triggers.forEach(function(card){
+      card.addEventListener('click', function(){ openModal(card); });
+      card.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' || e.key === ' '){
+          e.preventDefault();
+          openModal(card);
+        }
+      });
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', function(e){
+      if(e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
     });
   })();
 </script>
